@@ -10,3 +10,16 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+/*** Variables nuevas ***/
+
+$color-principal: #605C5B;
+$color-secondary: #029bad;
+$color-background: #f7f7f7;
+
+$widthMinTablet: 601px;
+$widthMaxTablet: 1024px;
+$widthDesktop: 1025px;
+$widthDesktopL: 1441px;
+
+$font-size: 14px;

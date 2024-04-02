@@ -1,27 +1,161 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body class="home">
+  <div class="home__container">
+    <include src="./views/header.html"></include>
+
+    <picture>
+      <img class="home__container__img" src="../src/assets/images/banner.jpg" alt="Ciudad de Tokyo">
+    </picture>
+
+    <section class="home__container__section">
+
+      <h1 class="home__container__section__title">Bienvenido a Tokyo</h1>
+
+      <p class="home__container__section__text">Tokyo, la capital de Japón, es una vibrante metrópolis que fusiona la
+        rica historia y las tradiciones arraigadas de Japón con una modernidad deslumbrante. Desde sus imponentes
+        rascacielos hasta sus santuarios antiguos, Tokyo es un crisol de contrastes que cautiva a sus visitantes con una
+        energía inigualable. La ciudad bulle con una efervescencia cultural única, donde la tradición se entrelaza con
+        la innovación en cada esquina. Sus calles rebosan de vida, desde los animados distritos comerciales hasta los
+        tranquilos jardines zen, ofreciendo una experiencia multisensorial que deleita y sorprende a cada paso. Además,
+        Tokyo es reconocida internacionalmente por su escena gastronómica excepcional, que abarca desde puestos
+        callejeros de ramen hasta restaurantes de alta cocina galardonados. Sumérgete en la fascinante atmósfera de
+        Tokyo y descubre por qué es una de las ciudades más emocionantes y cautivadoras del mundo.</p>
+
+      <h2 class="home__container__section__title" id="atracciones">Atracciones Turísticas</h2>
+
+      <p class="home__container__section__text">En esta sección, se muestran algunas de las atracciones turísticas más
+        emblemáticas de Tokyo. Desde el majestuoso Palacio Imperial hasta los bulliciosos barrios de Shibuya y Shinjuku,
+        estas imágenes te brindarán una visión fascinante de la diversidad y la belleza de la capital de Japón.
+        Sumérgete en la rica historia y la cultura vibrante de Tokyo a través de estas impresionantes fotografías.</p>
+
+      <div class="home__container__section__list">
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/palacio-imperial.jpg"
+            alt="El Palacio Imperial de Tokyo">
+          <p class="home__container__section__list__item__img__license">
+            Diego Delso, <a href="http://delso.photo/">delso.photo</a>, License <a
+              href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC-BY-SA</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">El Palacio Imperial de Tokyo</h3>
+        </div>
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/templo-senso.jpg"
+            alt="El Templo Senso-ji en Asakusa">
+          <p class="home__container__section__list__item__img__license">
+            Joe Mabel, <a href="https://commons.wikimedia.org/wiki/User:Jmabel">Joe Mabel</a>, License <a
+              href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">Creative Commons Attribution-Share Alike 2.0
+              Generic</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">El Templo Senso-ji en Asakusa</h3>
+        </div>
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/shibuya.jpg"
+            alt="El barrio de Shibuya">
+          <h3 class="home__container__section__list__item__title">El barrio de Shibuya</h3>
+        </div>
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/shinjuku.jpg"
+            alt="El distrito de Shinjuku">
+          <p class="home__container__section__list__item__img__license">
+            License <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-Share
+              Alike 4.0 International</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">El distrito de Shinjuku</h3>
+        </div>
+      </div>
+
+
+      <h2 class="home__container__section__title">Cultura Moderna</h2>
+
+      <p class="home__container__section__text">
+        Sumérgete en el fascinante mundo cultural de Tokyo, una metrópolis que fusiona la tradición con la vanguardia de
+        una manera única. Desde el icónico barrio de Harajuku, famoso por sus extravagantes modas y vibrante escena
+        juvenil, hasta Akihabara, conocido como "Electric Town" por su bulliciosa cultura otaku y tecnológica, cada
+        rincón de esta ciudad ofrece una experiencia cultural inolvidable. Explora la diversidad de expresiones
+        artísticas, arquitectura futurista y tradiciones centenarias que hacen de Tokyo un destino culturalmente
+        enriquecedor. ¡Prepárate para sumergirte en un mundo de creatividad, innovación y tradición en la capital de
+        Japón!
       </p>
-    </div>
+
+      <div class="home__container__section__list">
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/harajuku.jpg"
+            alt="El barrio de Harajuku">
+          <p class="home__container__section__list__item__img__license">
+            License <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-Share
+              Alike 4.0 International</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">El barrio de Harajuku</h3>
+        </div>
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/akihabara.png" alt="Akihabara, "
+            Electric Town"">
+          <h3 class="home__container__section__list__item__title">Akihabara, "Electric Town"</h3>
+        </div>
+      </div>
+
+      <h2 class="home__container__section__title">Gastronomía</h2>
+
+      <p class="home__container__section__text">
+        En esta sección, exploraremos la exquisita gastronomía de Tokyo, conocida por su amplia variedad de sabores y
+        experiencias culinarias únicas. Desde los renombrados restaurantes de sushi en el Mercado de Pescado de Tsukiji
+        hasta las pintorescas calles de Yakitori en Omoide Yokocho, sumérgete en un viaje gastronómico que deleitará tus
+        sentidos y te dejará con ganas de más. Descubre la riqueza y la diversidad de la cocina de Tokyo a través de
+        estas cautivadoras imágenes. ¡Prepárate para un festín de sabores inolvidables en la capital de Japón!
+      </p>
+
+      <div class="home__container__section__list">
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/tsukiji.jpg"
+            alt="Los restaurantes de sushi en el Mercado de Pescado de Tsukiji">
+          <p class="home__container__section__list__item__img__license">
+            License <a href="https://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0
+              Generic</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">Restaurantes de sushi, Tsukiji</h3>
+        </div>
+        <div class="home__container__section__list__item">
+          <img class="home__container__section__list__item__img" src="assets/images/omoide-yokocho.jpg"
+            alt="La calle de Yakitori en Omoide Yokocho">
+          <p class="home__container__section__list__item__img__license">
+            License <a href="https://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0
+              Generic</a>
+          </p>
+          <h3 class="home__container__section__list__item__title">Calle de Yakitori, Omoide Yokocho</h3>
+        </div>
+      </div>
+
+      <h2 class="home__container__section__title">Transporte</h2>
+
+      <p class="home__container__section__text">El sistema de transporte público de Tokyo es eficiente y avanzado, con
+        trenes, metro y autobuses que conectan
+        toda la ciudad. La Tarjeta Suica o Pasmo es una opción conveniente para moverse por la ciudad. </p>
+      <p class="home__container__section__text">
+        Además del transporte público, también puedes explorar Tokio en bicicleta. Muchas áreas de la ciudad cuentan con
+        carriles para bicicletas y servicios de alquiler disponibles en diversas ubicaciones.
+      </p>
+
+      <h2 class="home__container__section__title"></h2>
+
+      <p class="home__container__section__text--italic">Fuente: Información de la ciudad generada con <a
+          href="https://chat.openai.com/">ChatGPT</a></p>
+    </section>
+
+    <include src="./views/contact.html"></include>
+
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </div>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

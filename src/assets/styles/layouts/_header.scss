@@ -1,0 +1,110 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.3s ease;  
+
+    &--scrolled {
+        background-color: rgba($color-principal, 0.9);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            padding: 0.5rem;
+            border-radius: 50%;
+
+            @media only screen and (min-width: $widthMinTablet) {
+                width: 75px;
+            }
+        }
+
+        &__ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 9999;
+            display: none;
+            gap: 1rem;
+            width: 100%;
+            padding: 1rem;
+            list-style-type: none;
+            background-color: rgba($color-principal, 1);
+
+            @media only screen and (min-width: $widthMinTablet) {
+                position: static;
+                display: flex;
+                width: auto;
+                padding: 0;
+                margin-left: 1rem;
+                background-color: transparent;
+            }
+
+            &__item {
+                color: white;
+                text-decoration: none;
+
+                &--active {
+                    font-weight: 700;
+                    text-decoration: underline;
+                    text-underline-offset: 0.2rem;
+                }
+            }
+
+            &--open {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            margin-right: 1rem;
+            margin-left: auto;
+            background-color: transparent;
+            border: none;
+
+            @media only screen and (min-width: $widthMinTablet) {
+                flex-direction: column;
+            }
+
+            &__login {
+                margin-right: 0.5rem;
+
+                @media only screen and (min-width: $widthMinTablet) {
+                    display: block;
+                }
+            }
+
+            &__menu {
+                margin-right: 0.5rem;
+
+                @media only screen and (min-width: $widthMinTablet) {
+                    display: none;
+                }
+            }
+
+            &__close {
+                display: none;
+                margin-right: 0.5rem;
+            }
+
+            &--white {
+                color: white;
+            }
+
+            &--enable {
+                display: none;
+                color: white;
+
+                @media only screen and (min-width: $widthMinTablet) {
+                    display: block;
+                }
+
+            }
+        }
+
+    }
+}

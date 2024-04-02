@@ -1,3 +1,4 @@
+/*
 * {
   box-sizing: border-box;
 }
@@ -54,4 +55,154 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+*/
+
+/**
+* Import fonts
+*
+*/
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+/**
+* Function to increment font-size according the screen width
+*
+*/
+
+@function responsive-font-size($font-size, $factor) {
+  @return $font-size * $factor;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+
+  &__container {
+    font-size: $font-size;
+    background-color: $color-background;    
+
+    @media only screen and (min-width: $widthMinTablet) {
+      font-size: responsive-font-size($font-size, 1.1);
+    }
+
+    @media only screen and (min-width: $widthDesktop) {
+      font-size: responsive-font-size($font-size, 1.2);
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      background-size: contain;
+    }
+
+    &__section {
+      z-index: 2;
+      margin-top: 12rem;
+      margin-bottom: 1rem;
+
+      &__title {
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-right: auto;
+        margin-bottom: 2rem;        
+        margin-left: auto;
+        text-align: center;
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 35%;
+          width: 30%;
+          content: "";
+          border-bottom: 0.15rem solid $color-secondary;
+        }
+      }
+
+      &__text {
+        margin: 1rem;
+
+        &--italic {
+          margin: 1rem;
+          font-style: italic;
+        }
+      }
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 1.5rem;
+        margin-bottom: 2rem;
+
+        &__item {
+          height: 300px;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          background-color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+
+          @media only screen and (min-width: $widthDesktop) {
+            
+            &:hover {
+              transform: scale(1.1, 1.1);
+            }
+          }
+
+          &__img {
+            width: 350px;
+            height: 200px;
+            margin-bottom: 1rem;
+            object-fit: cover;
+
+            &__license {
+              font-size: 6px;
+              font-style: italic;
+            }
+          }
+
+          &__title {
+            margin-top: 0.5rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;            
+          }
+        }
+
+        @media only screen and (min-width: $widthMinTablet) and (max-width: $widthMaxTablet) {
+          grid-template-columns: repeat(2, 1fr);
+          max-width: 100%;
+        }
+
+        @media only screen and (min-width: $widthDesktop) {
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 100%;
+        }
+
+        @media only screen and (min-width: $widthDesktopL) {
+          grid-template-columns: repeat(4, 1fr);
+          max-width: 100%;
+        }
+      }
+
+    }
+  }
+
+
 }

@@ -1,0 +1,24 @@
+<section class="contact">
+    <h2 class="contact__title" id="contacto">Contacto</h2>
+
+    <p class="contact__text">Completa el siguiente formulario y nos pondremoos en contacto contigo para brindate más información sobre la ciudad y todo lo necesario para disfrutar del turismo de Tokyo.</p>
+    
+    <form class="contact__form" method="POST" action="#">
+        <div class="contact__form__container">
+            <label class="contact__form__label" for="nombre">Nombre</label>
+            <input class="contact__form__input" type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label class="contact__form__label" for="email">Email</label>
+            <input class="contact__form__input" type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label class="contact__form__label" for="mensaje">Mensaje</label>
+            <textarea class="contact__form__textarea" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <input class="contact__form__submit" type="submit" value="Enviar">
+    </form>
+</section>
