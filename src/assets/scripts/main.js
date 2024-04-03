@@ -49,7 +49,7 @@ function changeStylesHeader() {
   var header = document.querySelector('.header');
   var scrollPosition = window.scrollY;
 
-  var threshold = 240;
+  var threshold = 210;
 
   if (scrollPosition > threshold) {
     header.classList.add('header--scrolled');
