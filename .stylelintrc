@@ -36,6 +36,8 @@
         "declaration-block-no-duplicate-properties": true,
         "selector-max-compound-selectors": 3,
         "comment-empty-line-before": "always",
-        "rule-empty-line-before": "always"
+        "rule-empty-line-before": "always",
+        "selector-no-qualifying-type": true,
+        "block-no-empty": true
     }
 }

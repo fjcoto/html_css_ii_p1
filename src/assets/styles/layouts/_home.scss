@@ -68,15 +68,6 @@ body {
   src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
 }
 
-/**
-* Function to increment font-size according the screen width
-*
-*/
-
-@function responsive-font-size($font-size, $factor) {
-  @return $font-size * $factor;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -88,7 +79,7 @@ body {
 
   &__container {
     font-size: $font-size;
-    background-color: $color-background;    
+    background-color: $color-background;
 
     @media only screen and (min-width: $widthMinTablet) {
       font-size: responsive-font-size($font-size, 1.1);
@@ -120,7 +111,7 @@ body {
         position: relative;
         padding-bottom: 0.5rem;
         margin-right: auto;
-        margin-bottom: 2rem;        
+        margin-bottom: 2rem;
         margin-left: auto;
         text-align: center;
 
@@ -159,7 +150,7 @@ body {
           transition: transform 0.3s ease;
 
           @media only screen and (min-width: $widthDesktop) {
-            
+
             &:hover {
               transform: scale(1.1, 1.1);
             }
@@ -181,7 +172,7 @@ body {
             margin-top: 0.5rem;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;            
+            white-space: nowrap;
           }
         }
 

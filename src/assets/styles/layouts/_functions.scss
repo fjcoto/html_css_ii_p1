@@ -1,0 +1,9 @@
+/**
+* Function to increment font-size according the screen width
+*
+*/
+
+@function responsive-font-size($font-size, $factor) {
+    @return $font-size * $factor;
+  }
+  
